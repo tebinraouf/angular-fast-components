@@ -1,0 +1,46 @@
+<fast-card>
+  <h2>{{ title }}</h2>
+  <fast-text-field
+    [(ngModel)]="exampleTextField"
+    name="exampleTextField"
+    ngDefaultControl
+    placeholder="Enter Some Text"
+  ></fast-text-field>
+  <fast-button appearance="accent" (click)="onClick()">Click Me</fast-button>
+</fast-card>
+
+<h1>Checkbox</h1>
+<fast-checkbox (change)="onChange($event)">Checkbox</fast-checkbox>
+
+<h1>Data Grid</h1>
+
+<fast-data-grid>
+  <fast-data-grid-row row-type="header">
+    <fast-data-grid-cell grid-column="1" cell-type="columnheader">
+      <fast-button appearance="accent" (click)="onClick()">
+        Click Me
+      </fast-button>
+    </fast-data-grid-cell>
+    <fast-data-grid-cell grid-column="2" cell-type="columnheader">
+      Column 2
+    </fast-data-grid-cell>
+    <fast-data-grid-cell grid-column="3" cell-type="columnheader">
+      Column 3
+    </fast-data-grid-cell>
+    <fast-data-grid-cell grid-column="4" cell-type="columnheader">
+      Column 4
+    </fast-data-grid-cell>
+  </fast-data-grid-row>
+  <fast-data-grid-row>
+    <fast-data-grid-cell grid-column="1">1.1</fast-data-grid-cell>
+    <fast-data-grid-cell grid-column="2">1.2</fast-data-grid-cell>
+    <fast-data-grid-cell grid-column="3">1.3</fast-data-grid-cell>
+    <fast-data-grid-cell grid-column="4">1.4</fast-data-grid-cell>
+  </fast-data-grid-row>
+  <fast-data-grid-row>
+    <fast-data-grid-cell grid-column="1">2.1</fast-data-grid-cell>
+    <fast-data-grid-cell grid-column="2">2.2</fast-data-grid-cell>
+    <fast-data-grid-cell grid-column="3">2.3</fast-data-grid-cell>
+    <fast-data-grid-cell grid-column="4">2.4</fast-data-grid-cell>
+  </fast-data-grid-row>
+</fast-data-grid>
